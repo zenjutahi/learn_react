@@ -7,24 +7,24 @@ class App extends Component {
     super();
 
     this.state = {
-      animes : []
+      animes : [],
+      images : []
     };
   }
 
   UNSAFE_componentWillMount() {
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('https://api.jikan.moe/v3/search/anime?q=Action&page=1')
     .then(response => response.json())
-    .then(wasee => this.setState({ animes: wasee}))
+    .then(res => this.setState({ animes: res.results}))
+    fetch('https://api.jikan.moe/v3/anime/1/pictures')
+    .then(response => response.json())
+    .then(res => this.setState({ images: res.pictures}))
   }
 
   render(){
     return (
       <div className="App">
-        <CardList>
-          {this.state.animes.map(character => (
-            <h1 key={character.id}> {character.name} </h1>
-            ))}
-        </CardList>
+        <CardList animes={this.state.animes} images={this.state.images}/>
       </div>
     );
   }
