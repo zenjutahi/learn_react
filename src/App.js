@@ -7,8 +7,7 @@ class App extends Component {
     super();
 
     this.state = {
-      animes : [],
-      images : []
+      animes : []
     };
   }
 
@@ -16,9 +15,9 @@ class App extends Component {
     fetch('https://api.jikan.moe/v3/search/anime?q=Action&page=1')
     .then(response => response.json())
     .then(res => this.setState({ animes: res.results}))
-    fetch('https://api.jikan.moe/v3/anime/1/pictures')
-    .then(response => response.json())
-    .then(res => this.setState({ images: res.pictures}))
+    // fetch('https://api.jikan.moe/v3/anime/1/pictures')
+    // .then(response => response.json())
+    // .then(res => this.setState({ images: res.pictures}))
   }
 
   render(){
