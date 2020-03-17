@@ -7,7 +7,8 @@ class App extends Component {
     super();
 
     this.state = {
-      animes : []
+      animes : [],
+      searchField: ''
     };
   }
 
@@ -15,15 +16,19 @@ class App extends Component {
     fetch('https://api.jikan.moe/v3/search/anime?q=Action&page=1')
     .then(response => response.json())
     .then(res => this.setState({ animes: res.results}))
-    // fetch('https://api.jikan.moe/v3/anime/1/pictures')
-    // .then(response => response.json())
-    // .then(res => this.setState({ images: res.pictures}))
   }
 
   render(){
     return (
       <div className="App">
-        <CardList animes={this.state.animes} images={this.state.images}/>
+        <input type="search"
+            placeholder="search anime"
+            onChange={e => {
+              this.setState({ searchField: e.target.value }, () =>
+              console.log(this.state)
+              )}
+        }/>
+        <CardList animes={this.state.animes}/>
       </div>
     );
   }
