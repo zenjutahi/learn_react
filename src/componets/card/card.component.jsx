@@ -6,6 +6,7 @@ export const Card = (props) => (
     <img src={props.anime.image_url} alt="Anime"></img>
     <h2>{props.anime.title} </h2>
     <p>Episodes {props.anime.episodes}</p>
+    <p>Ratings {props.anime.score}</p>
     <p>{props.anime.synopsis}</p>
   </div>
 );
