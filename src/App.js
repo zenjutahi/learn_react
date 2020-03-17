@@ -19,6 +19,10 @@ class App extends Component {
   }
 
   render(){
+    const { animes, searchField } = this.state;
+    const filteredAnimes = animes.filter(anime =>
+      anime.title.toLowerCase().includes(searchField.toLowerCase())
+      );
     return (
       <div className="App">
         <input type="search"
@@ -28,7 +32,7 @@ class App extends Component {
               console.log(this.state)
               )}
         }/>
-        <CardList animes={this.state.animes}/>
+        <CardList animes={filteredAnimes}/>
       </div>
     );
   }
