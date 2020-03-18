@@ -19,6 +19,10 @@ class App extends Component {
     .then(res => this.setState({ animes: res.results}))
   }
 
+  handleChange = e => {
+    this.setState({ searchField: e.target.value })
+  }
+
   render(){
     const { animes, searchField } = this.state;
     const filteredAnimes = animes.filter(anime =>
@@ -28,10 +32,7 @@ class App extends Component {
       <div className="App">
         <SearchBox
           placeholder="search anime"
-          handleChange={e => {
-            this.setState({ searchField: e.target.value }, () =>
-            console.log(this.state)
-            )}}
+          handleChange={this.handleChange}
         />
         <CardList animes={filteredAnimes}/>
       </div>
