@@ -30,6 +30,7 @@ class App extends Component {
       );
     return (
       <div className="App">
+        <h1>Anime Rolodex</h1>
         <SearchBox
           placeholder="search anime"
           handleChange={this.handleChange}
