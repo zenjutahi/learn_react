@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/zenjutahi.io/learn_react/static/css/main.046cf446.chunk.css",
-    "main.js": "/zenjutahi.io/learn_react/static/js/main.e7d90540.chunk.js",
-    "main.js.map": "/zenjutahi.io/learn_react/static/js/main.e7d90540.chunk.js.map",
-    "runtime-main.js": "/zenjutahi.io/learn_react/static/js/runtime-main.f9041366.js",
-    "runtime-main.js.map": "/zenjutahi.io/learn_react/static/js/runtime-main.f9041366.js.map",
-    "static/js/2.53dbc575.chunk.js": "/zenjutahi.io/learn_react/static/js/2.53dbc575.chunk.js",
-    "static/js/2.53dbc575.chunk.js.map": "/zenjutahi.io/learn_react/static/js/2.53dbc575.chunk.js.map",
-    "index.html": "/zenjutahi.io/learn_react/index.html",
-    "precache-manifest.5800800902e999a66944ff286aae6b3a.js": "/zenjutahi.io/learn_react/precache-manifest.5800800902e999a66944ff286aae6b3a.js",
-    "service-worker.js": "/zenjutahi.io/learn_react/service-worker.js",
-    "static/css/main.046cf446.chunk.css.map": "/zenjutahi.io/learn_react/static/css/main.046cf446.chunk.css.map",
-    "static/js/2.53dbc575.chunk.js.LICENSE.txt": "/zenjutahi.io/learn_react/static/js/2.53dbc575.chunk.js.LICENSE.txt"
+    "main.css": "/learn_react/static/css/main.046cf446.chunk.css",
+    "main.js": "/learn_react/static/js/main.2895915e.chunk.js",
+    "main.js.map": "/learn_react/static/js/main.2895915e.chunk.js.map",
+    "runtime-main.js": "/learn_react/static/js/runtime-main.8e9ec321.js",
+    "runtime-main.js.map": "/learn_react/static/js/runtime-main.8e9ec321.js.map",
+    "static/js/2.53dbc575.chunk.js": "/learn_react/static/js/2.53dbc575.chunk.js",
+    "static/js/2.53dbc575.chunk.js.map": "/learn_react/static/js/2.53dbc575.chunk.js.map",
+    "index.html": "/learn_react/index.html",
+    "precache-manifest.562b8a366de59591347a362adb837f9b.js": "/learn_react/precache-manifest.562b8a366de59591347a362adb837f9b.js",
+    "service-worker.js": "/learn_react/service-worker.js",
+    "static/css/main.046cf446.chunk.css.map": "/learn_react/static/css/main.046cf446.chunk.css.map",
+    "static/js/2.53dbc575.chunk.js.LICENSE.txt": "/learn_react/static/js/2.53dbc575.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f9041366.js",
+    "static/js/runtime-main.8e9ec321.js",
     "static/js/2.53dbc575.chunk.js",
     "static/css/main.046cf446.chunk.css",
-    "static/js/main.e7d90540.chunk.js"
+    "static/js/main.2895915e.chunk.js"
   ]
 }
