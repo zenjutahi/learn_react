@@ -14,9 +14,9 @@ class App extends Component {
   }
 
   UNSAFE_componentWillMount() {
-    fetch('https://api.jikan.moe/v3/search/anime?q=Action&page=1')
+    fetch('https://api.jikan.moe/v3/top/anime/1')
     .then(response => response.json())
-    .then(res => this.setState({ animes: res.results}))
+    .then(res => this.setState({ animes: res.top}))
   }
 
   handleChange = e => {

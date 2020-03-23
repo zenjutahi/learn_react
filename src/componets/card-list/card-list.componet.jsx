@@ -6,7 +6,7 @@ export const CardList = (props) => {
   return (
   <div className="card-list">
     {props.animes.map(anime => (
-      <Card key={anime.mal_id} anime={anime}/>
+      <Card key={anime.rank} anime={anime}/>
       ))}
   </div>
   )
